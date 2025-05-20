@@ -49,9 +49,6 @@ function updateStatus(){
   numOfPairs.innerHTML = "Number of pairs left: " + pairsRemaining;
   let numOfClicks = document.getElementById("numOfClicks");
   numOfClicks.innerHTML = "Total Clicks: " + clicks;
-  
-  // let numOfUses = document.getElementById("powerup");
-  // numOfUses.innerText = "Uses left: " + powerupCounter;
 
   if (pairsRemaining == 0) {
     clearInterval(countdownTimer);
@@ -106,17 +103,15 @@ function reset() {
   message.innerHTML = "";
   const powerUpButton = document.getElementById("powerupButton");
   powerUpButton.removeAttribute('disabled');
-  // powerUpButton.setAttribute("disabled", false);
   setup();
 }
 
 function darkMode(){
-  // document.getElementById("game_grid").classList.add('dark');
-  document.body.classList.add('dark');
+  document.getElementById("game_grid").classList.add('dark');
 }
 
 function lightMode(){
-  document.body.classList.remove('dark');
+  document.getElementById("game_grid").classList.remove('dark');
 }
 
 function timer(){
@@ -183,7 +178,6 @@ function addOnClickEventToCard(){
   let secondCard = undefined
   $(".card").on(("click"), function () {
 
-    console.log("clicked");
     if (!firstCard){
       firstCard = $(this).find(".front_face")[0]
       $(this).toggleClass("flip");

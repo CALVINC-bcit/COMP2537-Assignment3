@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background-image: url("pokemon-bg1.png");;
 }
 
 #game_grid {
@@ -51,4 +52,30 @@ img {
 
 .dark {
   background-color: black;
+}
+
+/* Light green background */
+.button-green {
+  background-color: lightgreen;
+  color: black;
+}
+
+/* Red background */
+.button-red-bg {
+  background-color: red;
+  color: white;
+}
+
+/* Red text (forecolor) */
+.button-red-text {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer;
 }
