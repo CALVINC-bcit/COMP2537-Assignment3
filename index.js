@@ -111,11 +111,12 @@ function reset() {
 }
 
 function darkMode(){
-  document.getElementById("game_grid").classList.add('dark');
+  // document.getElementById("game_grid").classList.add('dark');
+  document.body.classList.add('dark');
 }
 
 function lightMode(){
-  document.getElementById("game_grid").classList.remove('dark');
+  document.body.classList.remove('dark');
 }
 
 function timer(){
